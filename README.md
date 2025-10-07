@@ -59,17 +59,17 @@ O arquivo `data/tasks.csv` deve conter as colunas:
 
 Exemplo de arquivo CSV:
 ```csv
-Tarefa,Tipo,Dado
-Abrir navegador,click,navegador_icone
-Aguardar carregamento,espera,3
-Clicar na barra de endereço,click,barra_endereco
-Digitar URL,texto,https://www.google.com
-Pressionar Enter,tecla,enter
-Aguardar página carregar,espera,2
-Clicar na caixa de pesquisa,click,caixa_pesquisa
-Digitar termo de pesquisa,texto,Python RPA
-Pressionar Enter para pesquisar,tecla,enter
-Aguardar resultados,espera,3
+Tarefa,Tipo,Dado,Condicional,Nota
+Abrir navegador,click,navegador_icone,,Clicar no ícone do navegador
+Aguardar carregamento,espera,3,ultimo_sucesso==true,Esperar 3 segundos para a página carregar
+Clicar na barra de endereço,click,barra_endereco,ultimo_sucesso==true,Interagir com a barra de endereço
+Digitar URL,texto,https://www.google.com,ultimo_sucesso==true,Digitar o endereço do site
+Pressionar Enter,tecla,enter,ultimo_sucesso==true,Navegar até o site
+Aguardar página carregar,espera,2,ultimo==sucesso==true,Esperar 2 segundos para a página carregar
+Clicar na caixa de pesquisa,click,caixa_pesquisa,ultimo_sucesso==true,Interagir com a caixa de pesquisa
+Digitar termo de pesquisa,texto,Python RPA,ultimo_sucesso==true,Digitar o texto que será pesquisado
+Pressionar Enter para pesquisar,tecla,enter,ultimo_sucesso==true,Realizar a pesquisa
+Aguardar resultados,espera,3,ultimo_sucesso==true,Esperar 3 segundos pelo resultado
 ```
 
 ### 4. Tipos de ação suportados
@@ -77,6 +77,7 @@ Aguardar resultados,espera,3
 - **texto**: Digita o texto especificado
 - **tecla**: Pressiona uma tecla específica
 - **espera**: Aguarda o tempo especificado (em segundos)
+- **scroll**: Rola a página para baixo ou para cima
 
 ### 5. Relatório de Execução
 Após a execução, um relatório é gerado em `data/output/report_execucao.xlsx` contendo:
