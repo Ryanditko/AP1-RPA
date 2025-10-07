@@ -1,0 +1,15 @@
+Tarefa,Tipo,Dado,Condicional,Nota
+Abrir menu,tecla,win,,Clicar no menu Iniciar
+Digitar site,texto,Aplicativos: Google Chrome,"ultimo_sucesso==true",Buscar o navegador
+Pressionar Enter,tecla,enter,"ultimo_sucesso==true",Abrir o navegador
+Esperar carregar,espera,3,"ultimo_sucesso==true",Aguardar o carregamento
+Digitar URL,texto,youtube.com,"ultimo_sucesso==true",Acessar o site do YouTube
+Pressionar Enter,tecla,enter,"ultimo_sucesso==true",Navegar até a página
+Esperar carregar,espera,5,"ultimo_sucesso==true",Aguardar o carregamento da página
+Clicar na barra de pesquisa,click,barra_pesquisa,"ultimo_sucesso==true",Interagir com a barra de pesquisa
+Digitar na barra de pesquisa,texto,hashtag programacao,"ultimo_sucesso==true",Pesquisar por hashtag programação
+Pressiona Enter,tecla,enter,"ultimo_sucesso==true",Pesquisar
+Esperar carregar,espera,3,"ultimo_sucesso==true",Aguardar o carregamento da página de resultados
+Clicar no logo do canal,click,logo_hashtag,"ultimo_sucesso==true",Acessar o canal
+Esperar carregar,espera,3,"ultimo_sucesso==true",Aguardar o carregamento do canal
+Fazer scroll,scroll,-450,"ultimo_sucesso==true",Navegar pela página
