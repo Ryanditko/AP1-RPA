@@ -9,7 +9,6 @@ automacao_RPA/
 ├── main.py                  # Script principal
 ├── requirements.txt         # Dependências do projeto
 ├── README.md               # Este arquivo
-├── exemplo.md              # Exemplo de documentação
 ├── core/                   # Módulos principais
 │   ├── __init__.py
 │   ├── actions.py          # Implementação das ações
@@ -52,9 +51,9 @@ python main.py
 ### 3. Formato do arquivo de tarefas
 O arquivo `data/tasks.csv` deve conter as colunas:
 - **Tarefa**: Descrição da ação
-- **Tipo**: Tipo de ação (`click`, `texto`, `tecla`, `espera`)
-- **Dado**: Dados para a ação (nome da posição, texto, tecla ou tempo)
-- **Condicional**: Condição para executar ou não as terefas (opcional)
+- **Tipo**: Tipo de ação (`click`, `texto`, `tecla`, `espera`, `scroll`)
+- **Dado**: Dados para a ação (nome da posição, texto, tecla, tempo ou quantidade)
+- **Condicional**: Condição para executar ou não as tarefas (opcional, executa se estiver vazio)
 - **Nota**: Detalhamento das ações (opcional)
 
 Exemplo de arquivo CSV:
