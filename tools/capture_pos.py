@@ -6,7 +6,7 @@ time.sleep(5)
 x, y = pyautogui.position()
 print(f"Coordenadas capturadas: {x}, {y}")
 
-# salva ou atualiza o JSON
+
 nome = input("Digite um nome para essa posição: ")
 try:
     data_dir = Path(__file__).resolve().parent.parent / "data"

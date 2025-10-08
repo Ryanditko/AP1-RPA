@@ -5,7 +5,7 @@ import traceback
 from core import carregar_posicoes, gerar_relatorio, clicar, digitar_texto, pressionar_tecla, esperar, rolar_tela, avaliar_condicao
 
 def executar_tarefas(caminho_tarefas, caminho_posicoes, caminho_relatorio):
-    '''Executa todas as tarefas listadas no arquivo CSV'''
+    
     posicoes = carregar_posicoes(caminho_posicoes)
     tarefas = pd.read_csv(caminho_tarefas)
     resultados = []

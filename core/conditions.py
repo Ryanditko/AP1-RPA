@@ -3,7 +3,7 @@ import math
 
 
 def avaliar_condicao(cond, ultimo_sucesso):
-    """Avalia a condição antes de executar uma tarefa."""
+
     if cond is None or (isinstance(cond, float) and math.isnan(cond)):
         return True
     

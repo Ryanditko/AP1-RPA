@@ -3,7 +3,7 @@ from datetime import datetime
 
 
 def gerar_relatorio(resultados, caminho_saida, tempo_total):
-    """Gera um relatório Excel com as tarefas executadas."""
+
     df = pd.DataFrame(resultados)
     resumo = {
         "Data de Execução": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),

@@ -7,7 +7,7 @@ pyautogui.PAUSE = 0.25
 
 
 def clicar(nome_ou_coord, posicoes):
-    """Clica em uma posição nomeada ou coordenada."""
+
     try:
         if isinstance(nome_ou_coord, str) and nome_ou_coord in posicoes:
             x, y = posicoes[nome_ou_coord]
