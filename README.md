@@ -1,7 +1,7 @@
 # AP1 - RPA: Projeto de Automação com Python
 
 ## Descrição
-Este projeto implementa um assistente virtual automatizado que lê uma lista de tarefas de um arquivo CSV e executa ações automatizadas no computador, como clicar, digitar, pressionar teclas e aguardar.
+Este projeto implementa um assistente virtual automatizado que lê uma lista de tarefas de um arquivo CSV e executa ações automatizadas no computador, como clicar, digitar, pressionar teclas, aguardar e fazer scroll.
 
 ## Estrutura do Projeto
 ```
