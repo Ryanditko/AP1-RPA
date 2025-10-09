@@ -1,15 +1,11 @@
 Tarefa,Tipo,Dado,Condicional,Nota
-Abrir menu,tecla,win,,Clicar no menu Iniciar
-Digitar site,texto,Aplicativos: Google Chrome,"ultimo_sucesso==true",Buscar o navegador
-Pressionar Enter,tecla,enter,"ultimo_sucesso==true",Abrir o navegador
-Esperar carregar,espera,3,"ultimo_sucesso==true",Aguardar o carregamento
-Digitar URL,texto,youtube.com,"ultimo_sucesso==true",Acessar o site do YouTube
-Pressionar Enter,tecla,enter,"ultimo_sucesso==true",Navegar até a página
-Esperar carregar,espera,5,"ultimo_sucesso==true",Aguardar o carregamento da página
-Clicar na barra de pesquisa,click,barra_pesquisa,"ultimo_sucesso==true",Interagir com a barra de pesquisa
-Digitar na barra de pesquisa,texto,hashtag programacao,"ultimo_sucesso==true",Pesquisar por hashtag programação
-Pressiona Enter,tecla,enter,"ultimo_sucesso==true",Pesquisar
-Esperar carregar,espera,3,"ultimo_sucesso==true",Aguardar o carregamento da página de resultados
-Clicar no logo do canal,click,logo_hashtag,"ultimo_sucesso==true",Acessar o canal
-Esperar carregar,espera,3,"ultimo_sucesso==true",Aguardar o carregamento do canal
-Fazer scroll,scroll,-450,"ultimo_sucesso==true",Navegar pela página
+Abrir menu,tecla,win,,Clica no menu Iniciar
+Digitar site,texto,Aplicativos: Google Chrome,"ultimo_sucesso==true",Busca o navegador
+Pressionar Enter,tecla,enter,"ultimo_sucesso==true",Abre o navegador
+Esperar carregar,espera,3,"ultimo_sucesso==true",Aguarda o carregamento
+Digitar URL,texto,https://youtu.be/h9vEE1KWsI4?si=4tk-NoZW0sdBeKtz,"ultimo_sucesso==true",Acessar o vídeo sobre automação no YouTube
+Pressionar Enter,tecla,enter,"ultimo_sucesso==true",Navega até a página
+Esperar carregar,espera,5,"ultimo_sucesso==true",Aguarda o carregamento da página
+Pausar vídeo,click,tela_video,"ultimo_sucesso==true",Clica na tela e pausa o vídeo
+Esperar,espera,1,"ultimo_sucesso==true",Aguarda 1 segundo
+Fechar navegador,tecla,alt+f4,"ultimo_sucesso==true",Fecha o navegador e encerra a automação

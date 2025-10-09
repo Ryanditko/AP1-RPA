@@ -24,7 +24,7 @@ def clicar(nome_ou_coord, posicoes):
 
 def digitar_texto(texto):
     try:
-        pyautogui.write(str(texto), interval=0.03)
+        pyautogui.write(str(texto), interval=0.05)
         return True, f"Texto digitado: {texto}"
     except Exception as e:
         return False, f"Erro ao digitar: {e}"
